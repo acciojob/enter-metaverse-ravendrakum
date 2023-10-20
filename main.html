@@ -10,7 +10,22 @@
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
+	<p id="status">Enter the Metaverse</p>
+    <button id="enterBtn" onclick="updateText()">Enter</button>
+    <h1 id="outputText"></h1>
 
+    <script>
+        function updateText() {
+            var status = document.getElementById("status");
+            var outputText = document.getElementById("outputText");
+            
+            // Update the content in the p tag
+            status.innerHTML = "Entered Metaverse";
+            
+            // Display the updated content in an h1 tag
+            outputText.innerHTML = status.innerHTML;
+        }
+    </script>
 </body>
 
 </html>
